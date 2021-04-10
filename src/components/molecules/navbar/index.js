@@ -44,7 +44,7 @@ const Index = (props) => {
                   <span
                     className='bg-danger text-white px-2 ml-3'
                     style={{ cursor: 'pointer', borderRadius: '50%' }}
-                    onClick={(data) => removeFavorite(data[0])}
+                    onClick={(e) => removeFavorite(e, data[0].id)}
                   >
                     x
                   </span>

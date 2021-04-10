@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom';
 import { Navbar } from '../../components';
 import * as action from '../../redux/action';
 import { connect } from 'react-redux';
+import { Button } from 'react-bootstrap';
 
 const Index = (props) => {
   const { addFavorite } = props;
@@ -46,7 +47,10 @@ const Index = (props) => {
             onClick={(e) => handleAddFavorite(e)}
             style={{ cursor: 'pointer' }}
           >
-            <i className='fa fa-heart fa-2x'></i>
+            <Button variant='default border-warning'>
+              Add to Favorite
+              <i className='fa fa-heart fa-lg ml-2'></i>
+            </Button>
           </div>
         </div>
       </div>
